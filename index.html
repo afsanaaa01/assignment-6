@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://kit.fontawesome.com/319a64e2c7.css" crossorigin="anonymous">-->
+</head>
+<body>
+    <header>
+        <h3 class="text-center mt-5 fw-semibold">AI Universe Hub</h3>
+        <div class="d-flex justify-content-center mt-4">
+            <button id = "sort-data" onclick="sortByDate()" type="button" class="btn btn-danger p-2 rounded-3">Sort By Date</button>
+        </div>
+    </header>
+    <!-- Loader -->
+    <section id = "loader" class="d-none">
+        <div style = "height: 300px;" class="d-flex justify-content-center align-items-center">
+            <div class="spinner-border text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="m-5 p-2">
+            <div id="app-info" class="row row-cols-1 row-cols-md-3 g-4">
+              
+            </div>
+        </section>
+    
+        <section>
+            <div class="d-flex justify-content-center mt-4 mb-3">
+                <button id="show-all" onclick="showAllDataTogether()" type="button" class="btn btn-danger p-2 rounded-3 d-none">See More</button>
+            </div>
+        </section>
+        
+        
+
+        <!-- Modal -->
+    <section>
+        <section>
+            <div class="modal fade" id="appDetailModal" tabindex="-1" aria-labelledby="appDetailModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <!--<div class="modal-header">
+                    <h1 class="modal-title fs-5" id="appDetailModalLabel"></h1>-->
+                    <button class="btn-close bg-danger rounded-pill p-3" style="margin-left: 770px; margin-top: -20px;" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <!--</div>-->
+                  <div id = "app-detail" class="modal-body">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        </section>
+    </main>
+    
+    
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/319a64e2c7.js" crossorigin="anonymous"></script>
+</body>
+</html>
